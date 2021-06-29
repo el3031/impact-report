@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 3vh;
   pointer-events: none;
 }
 
@@ -13,23 +13,28 @@
   }
 }
 
-.Home-title {
+.title {
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(10px + 5vmin);
+  font-size: 10vh;
   color: #4b79b9;
   margin: 0;
+  font-weight: 800;
+}
+
+.section {
+  height: 100vh;
 }
 
 .Home-logo {
   margin: 0 auto;
-  padding: 4%;
   justify-content: center;
+  padding: 3vh;
   display: flex;
   background-color: black;
-  height: 3%;
+  height: 10vh;
 }
 
 .Home-cover {
@@ -46,4 +51,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+h2{
+  color: #4b79b9;
+  font-size: 7vh;
+  padding: 0%;
 }

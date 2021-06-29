@@ -1,12 +1,14 @@
 import './App.css';
 import HomePage from './HomePage.js'
 import Vision from './Vision.js'
+import Sidebar from './Sidebar.js'
 
 function App() {
   return (
-    <div className="ImpactReport">
+    <div id="main" className="ImpactReport">
       <HomePage id="Home"/>
       <Vision id="Vision"/>
+      <Sidebar />
     </div>
     
     

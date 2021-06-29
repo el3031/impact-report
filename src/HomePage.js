@@ -5,11 +5,11 @@ import tableOfContents from './img/tableContentsHome.svg'
 function HomePage()
 {
     return(
-        <header className="Home">
-        <img src={axel} className="Home-cover" alt="axel"/>
-        <h1 className="Home-title">Impact Report 2021</h1>
-        <img src={logo} className="Home-logo" alt="logo"/>
-        <tableOfContents className="Home-toc"/>
+        <header className="Home section">
+            <img src={axel} className="Home-cover" alt="axel"/>
+            <h1 className="title">Impact Report 2021</h1>
+            <img src={logo} className="Home-logo" alt="logo"/>
+            <tableOfContents className="Home-toc"/>
         </header>
     );
 }

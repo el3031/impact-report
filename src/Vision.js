@@ -3,8 +3,8 @@
 function Vision()
 {
     return(
-        <div className="Vision">
-            <h1>Our Vision</h1>
+        <div className="Vision section">
+            <h2>Our Vision</h2>
             <p>filler text here</p>
         </div>
     );
