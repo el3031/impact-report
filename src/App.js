@@ -1,8 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './HomePage.js'
+import Vision from './Vision.js'
 
 function App() {
   return (
+    <div className="ImpactReport">
+      <HomePage id="Home"/>
+      <Vision id="Vision"/>
+    </div>
+    
+    
+    
+    /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +28,7 @@ function App() {
         </a>
       </header>
     </div>
+    */
   );
 }
 
