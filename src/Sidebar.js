@@ -1,45 +1,29 @@
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css'
-import React, { useState } from 'react';
 
-function Sidebar()
-{
-    const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
+export default props => {
     
-    const openNav = () =>
-    {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    const closeNav = () =>
-    {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-    }
-
-    return(
-        <div id="mySidenav" className="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
+    var isMenuOpen = function(state) {
+        
+        document.getElementById("main").style.marginLeft = state.isOpen ? "20vw" : "0vw";
+        return state.isOpen;
+    };
+    
+    return (
+        <Menu id="menu" noOverlay onStateChange={isMenuOpen}>
+            <a className="menu-item" href="/">
+                Home
+            </a>
+            <a className="menu-item" href="/salads">
+                Salads
+            </a>
+            <a className="menu-item" href="/pizzas">
+                Pizzas
+            </a>
+            <a className="menu-item" href="/desserts">
+                Desserts
+            </a>
+        </Menu>
     );
-}
-
-/*
-function closeNav()
-{
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-
-function openNav()
-{
-    alert("openNav");
-    
-}
-*/
-export default Sidebar;
+};

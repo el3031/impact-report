@@ -5,10 +5,13 @@ import Sidebar from './Sidebar.js'
 
 function App() {
   return (
-    <div id="main" className="ImpactReport">
-      <HomePage id="Home"/>
-      <Vision id="Vision"/>
-      <Sidebar />
+    <div>
+      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+      <div id="main" className="ImpactReport">
+        <HomePage id="Home"/>
+        <Vision id="Vision"/>
+      </div>
+      
     </div>
     
     
