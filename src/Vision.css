@@ -1,0 +1,40 @@
+/*
+.Vision img {
+    width: 30%;
+    float: left;
+    object-fit: contain;
+    background: blue;
+    padding-right: 5%;
+}
+*/
+.vision-body {
+    display: flex;
+    justify-content: center;
+}
+
+.vision-body .text {
+    float: left;
+    background: blue;
+    padding-right: 5%;
+}
+
+figure.image {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: center;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    width: 80vw;
+}
+
+figure img {
+    width: 25vw;
+    background-color: grey;
+    float: left;
+    flex-basis: 40%;
+}
+
+figure figcaption {
+    padding: 2%;
+    background: blue;
+}
